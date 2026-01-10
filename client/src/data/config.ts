@@ -4,7 +4,7 @@ export const PERSONAL_DETAILS = {
     role: "Full Stack Developer",
     focus: "Backend-Focused",
     phone: "93355215045",
-    email: "deepshekhar@example.com", // Placeholder
+    email: "deepshekhar@example.com",
     location: "Lucknow, India",
     tagline: "Building robust, scalable backend systems and responsive frontends.",
 };
@@ -42,42 +42,32 @@ export const SKILLS = {
 
 export const PROJECTS = [
     {
-        title: "Fitness & Workout Tracker",
-        description: "A full-stack application to track workouts, monitor progress, and set fitness goals.",
-        techStack: ["React", "Node.js", "MongoDB", "Express"],
-        features: ["User Auth", "Workout Logging", "Progress Charts"],
+        title: "AI Powered Fitness Tracker",
+        description: "Advanced fitness app with AI insights, workout logging, water tracking, and progress visualization.",
+        techStack: ["React", "Node.js", "MongoDB", "Recharts", "AI Integration"],
+        features: ["AI Workout Suggestions", "Interactive Charts", "Water Tracker", "BMI Calculator"],
         links: {
-            code: "#",
+            code: "https://github.com/deepshekhardas/fitness-tracker",
             demo: "#",
         },
     },
     {
-        title: "Secure Auth Service",
-        description: "A comprehensive authentication service with JWT, refresh tokens, and email verification.",
-        techStack: ["Node.js", "Express", "Redis", "MongoDB"],
-        features: ["JWT Auth", "2FA", "Role-based Access"],
+        title: "Real-time Live Chat",
+        description: "A seamless real-time messaging application supporting group chats, file sharing, and Google OAuth.",
+        techStack: ["MERN Stack", "Socket.io", "Google OAuth", "Chakra UI"],
+        features: ["Real-time Messaging", "Group Chats", "File Sharing", "User Search"],
         links: {
-            code: "#",
+            code: "https://github.com/deepshekhardas/chat-app",
             demo: "#",
         },
     },
     {
-        title: "E-Commerce Backend",
-        description: "A robust backend for an e-commerce platform handling products, cart, and payments.",
-        techStack: ["Node.js", "Express", "Stripe API", "PostgreSQL"],
-        features: ["Cart Management", "Stripe Checkout", "Order History"],
+        title: "Full Stack E-Commerce",
+        description: "Complete e-commerce platform with product management, cart functionality, and secure payments.",
+        techStack: ["React", "Node.js", "Express", "Stripe", "MongoDB"],
+        features: ["Secure Stripe Payments", "Admin Dashboard", "Order Management", "Search & Filter"],
         links: {
-            code: "#",
-            demo: "#",
-        },
-    },
-    {
-        title: "Expense Tracker API",
-        description: "REST API for tracking personal expenses with detailed reporting and categorization.",
-        techStack: ["Node.js", "Express", "Mongoose"],
-        features: ["CRUD Operations", "Monthly Reports", "Category Filtering"],
-        links: {
-            code: "#",
+            code: "https://github.com/deepshekhardas/ecommerce",
             demo: "#",
         },
     },
