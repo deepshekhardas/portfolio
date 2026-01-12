@@ -42,32 +42,42 @@ export const SKILLS = {
 
 export const PROJECTS = [
     {
-        title: "AI Powered Fitness Tracker",
-        description: "Advanced fitness app with AI insights, workout logging, water tracking, and progress visualization.",
-        techStack: ["React", "Node.js", "MongoDB", "Recharts", "AI Integration"],
-        features: ["AI Workout Suggestions", "Interactive Charts", "Water Tracker", "BMI Calculator"],
+        title: "Simple E-Commerce Backend",
+        description: "A robust backend layout for e-commerce with Admin Dashboard, Order Management, and Secure Payments.",
+        techStack: ["Node.js", "Express", "MongoDB", "Next.js"],
+        features: ["Admin Dashboard", "Order Management", "Payment Integration", "REST API"],
         links: {
-            code: "https://github.com/deepshekhardas/fitness-tracker",
+            code: "https://github.com/deepshekhardas/simple-ecommerce-backend",
             demo: "#",
         },
     },
     {
-        title: "Real-time Live Chat",
-        description: "A seamless real-time messaging application supporting group chats, file sharing, and Google OAuth.",
-        techStack: ["MERN Stack", "Socket.io", "Google OAuth", "Chakra UI"],
+        title: "LuxChat",
+        description: "Premium Real-Time Messaging Platform supporting group chats and file sharing.",
+        techStack: ["React", "Node.js", "Socket.io", "Express"],
         features: ["Real-time Messaging", "Group Chats", "File Sharing", "User Search"],
         links: {
-            code: "https://github.com/deepshekhardas/chat-app",
+            code: "https://github.com/deepshekhardas/luxchat",
             demo: "#",
         },
     },
     {
-        title: "Full Stack E-Commerce",
-        description: "Complete e-commerce platform with product management, cart functionality, and secure payments.",
-        techStack: ["React", "Node.js", "Express", "Stripe", "MongoDB"],
-        features: ["Secure Stripe Payments", "Admin Dashboard", "Order Management", "Search & Filter"],
+        title: "Restaurant SaaS Website",
+        description: "Modern, responsive website template for restaurants with multi-page layout.",
+        techStack: ["HTML", "CSS", "JavaScript", "Netlify"],
+        features: ["Responsive Design", "Menu Showcase", "Contact Form", "Animations"],
         links: {
-            code: "https://github.com/deepshekhardas/ecommerce",
+            code: "https://github.com/deepshekhardas/restaurant-saas-website",
+            demo: "https://restaurant-saas-website.netlify.app/",
+        },
+    },
+    {
+        title: "Instagram Clone",
+        description: "Full-stack clone of Instagram replicating core social media features.",
+        techStack: ["React", "Full Stack", "Social Media"],
+        features: ["Photo Sharing", "User PROFILES", "Like & Comment", "Feed Logic"],
+        links: {
+            code: "https://github.com/deepshekhardas/instagram-clone",
             demo: "#",
         },
     },
