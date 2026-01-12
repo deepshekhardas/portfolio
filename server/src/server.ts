@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import connectDB from './config/db';
 import contactRoutes from './routes/contactRoutes';
+import chatRoutes from './routes/chatRoutes';
 
 // Load env vars
 dotenv.config();
@@ -21,6 +22,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/api/contact', contactRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Base route
 app.get('/', (req: Request, res: Response) => {

@@ -59,7 +59,7 @@ const About: React.FC = () => {
                                     className="p-8 bg-slate-900/40 backdrop-blur-md rounded-2xl border border-indigo-500/10 transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] group"
                                 >
                                     <div className="w-14 h-14 bg-slate-950/80 rounded-xl flex items-center justify-center mb-6 border border-indigo-500/20 shadow-lg shadow-indigo-900/20 group-hover:border-amber-500/30 group-hover:shadow-amber-900/10 transition-all">
-                                        {React.cloneElement(item.icon as React.ReactElement<any>, { className: "w-7 h-7 text-indigo-400 group-hover:text-amber-400 transition-colors" })}
+                                        {React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: "w-7 h-7 text-indigo-400 group-hover:text-amber-400 transition-colors" })}
                                     </div>
                                     <h3 className="text-xl font-bold font-serif text-slate-100 mb-3 group-hover:text-amber-200 transition-colors">{item.title}</h3>
                                     <p className="text-slate-400 text-sm leading-relaxed font-light">{item.description}</p>

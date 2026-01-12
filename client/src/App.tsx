@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ThreeBackground from './components/ThreeBackground';
+import ChatBot from './components/ChatBot';
 import 'lenis/dist/lenis.css';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       smooth: true,
       smoothTouch: false,
       touchMultiplier: 2,
-    } as any);
+    });
 
     function raf(time: number) {
       lenis.raf(time);
@@ -38,6 +39,7 @@ function App() {
   return (
     <div className="bg-slate-950 min-h-screen relative text-slate-100 selection:bg-amber-500/30 selection:text-amber-100 font-sans">
       <ThreeBackground />
+      <ChatBot />
       <Navbar />
       <main className="relative z-10">
         <Hero />

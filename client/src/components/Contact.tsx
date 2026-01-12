@@ -42,9 +42,10 @@ const Contact: React.FC = () => {
             setStatus('success');
             setFormData({ name: '', email: '', message: '' });
             setTimeout(() => setStatus('idle'), 5000);
-        } catch (error: any) {
+        } catch (error: unknown) {
             setStatus('error');
-            setErrorMessage(error.message || 'Failed to send message');
+            const msg = error instanceof Error ? error.message : 'Failed to send message';
+            setErrorMessage(msg);
         }
     };
 
