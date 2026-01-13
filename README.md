@@ -108,6 +108,36 @@ vercel deploy
 ### Backend (Render)
 Server includes `render.yaml` for easy deployment.
 
+## 🐳 Docker
+
+Run the entire stack (frontend, backend, MongoDB) with a single command:
+
+```bash
+# Start all services
+docker-compose up --build
+
+# Access:
+# - Frontend: http://localhost
+# - Backend API: http://localhost:5000
+# - MongoDB: localhost:27017
+```
+
+**Environment Variables:**
+Create a `.env` file in the project root with:
+```env
+HF_TOKEN=your_huggingface_token
+```
+
+## 🔄 CI/CD
+
+This project uses **GitHub Actions** for continuous integration. On every push or pull request to `main`:
+
+1. ✅ **Client:** Lints and builds the frontend
+2. ✅ **Server:** Runs tests and builds the backend
+3. ✅ **Docker:** Verifies Docker images build correctly
+
+View the pipeline status in the "Actions" tab of the GitHub repository.
+
 ## 📄 License
 
 ISC
