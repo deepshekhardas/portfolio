@@ -13,6 +13,6 @@ describe('Config Data', () => {
     });
 
     it('has projects defined', () => {
-        expect(PROJECTS.length).toBe(3);
+        expect(PROJECTS.length).toBe(4);
     });
 });
