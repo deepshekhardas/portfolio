@@ -9,7 +9,7 @@ A modern, responsive portfolio website with AI-powered chatbot built with React,
 - **Skills Section** - Categorized skills with progress indicators
 - **Projects Section** - Portfolio projects with external links
 - **Contact Form** - MongoDB-backed form submissions
-- **AI ChatBot** - RAG-based chatbot powered by Google Gemini API
+- **AI ChatBot** - powered by OpenAI GPT-3.5
 
 ## 📁 Structure
 
@@ -21,7 +21,7 @@ A modern, responsive portfolio website with AI-powered chatbot built with React,
 - Node.js (v18 or higher)
 - npm
 - MongoDB (local or Atlas)
-- Google Gemini API Key
+- OpenAI API Key
 
 ## 🚀 Getting Started
 
@@ -44,7 +44,7 @@ npm install
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/portfolio
 NODE_ENV=development
-GEMINI_API_KEY=your_gemini_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 **Client** (`client/.env`):
@@ -125,7 +125,7 @@ docker-compose up --build
 **Environment Variables:**
 Create a `.env` file in the project root with:
 ```env
-HF_TOKEN=your_huggingface_token
+OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ## 🔄 CI/CD

@@ -34,9 +34,9 @@ const connectDB = async () => {
 
             // Note: Data will be lost on restart
         } catch (memErr: any) {
-            console.error("❌ Failed to start Portable DB. Please install it or use a Cloud URI.");
-            console.error(memErr.message);
-            process.exit(1);
+            console.warn("⚠️ Database not available. Contact form will not work, but ChatBot will still function.");
+            console.warn(memErr.message);
+            // Don't exit - allow server to run for ChatBot functionality
         }
 
     } catch (error: any) {
