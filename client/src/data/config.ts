@@ -42,13 +42,23 @@ export const SKILLS = {
 
 export const PROJECTS = [
     {
+        title: "Fitness Pro",
+        description: "AI-powered fitness tracking application with workout planning and progress monitoring.",
+        techStack: ["React", "Node.js", "Express", "MongoDB", "OpenAI"],
+        features: ["AI Workout Planner", "Progress Dashboard", "Exercise History", "Responsive UI"],
+        links: {
+            code: "https://github.com/deepshekhardas/fitness-pro",
+            demo: "https://fp-hna2.onrender.com/",
+        },
+    },
+    {
         title: "Simple E-Commerce Backend",
         description: "A robust backend layout for e-commerce with Admin Dashboard, Order Management, and Secure Payments.",
         techStack: ["Node.js", "Express", "MongoDB", "Next.js"],
         features: ["Admin Dashboard", "Order Management", "Payment Integration", "REST API"],
         links: {
             code: "https://github.com/deepshekhardas/simple-ecommerce-backend",
-            demo: "#",
+            demo: "https://simple-ecommerce-backend-three.vercel.app/products",
         },
     },
     {
