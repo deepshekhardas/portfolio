@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LogOut, Mail, Calendar, Trash2 } from 'lucide-react';
+import { LogOut, Mail, Calendar } from 'lucide-react';
 
 interface ContactMessage {
     _id: string;
