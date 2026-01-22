@@ -41,7 +41,7 @@ npm install
 
 **Server** (`server/.env`):
 ```env
-PORT=5000
+PORT=5001
 MONGO_URI=mongodb://127.0.0.1:27017/portfolio
 NODE_ENV=development
 OPENAI_API_KEY=your_openai_api_key_here
@@ -49,7 +49,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 **Client** (`client/.env`):
 ```env
-VITE_API_URL=http://localhost:5000
+VITE_API_URL=http://localhost:5001
 ```
 
 ### 3. Start Development
@@ -58,7 +58,7 @@ VITE_API_URL=http://localhost:5000
 # Terminal 1 - Backend
 cd server
 npm run dev
-# Runs on http://localhost:5000
+# Runs on http://localhost:5001
 
 # Terminal 2 - Frontend
 cd client
@@ -118,7 +118,7 @@ docker-compose up --build
 
 # Access:
 # - Frontend: http://localhost
-# - Backend API: http://localhost:5000
+# - Backend API: http://localhost:5001
 # - MongoDB: localhost:27017
 ```
 

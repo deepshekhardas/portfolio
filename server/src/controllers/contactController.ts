@@ -36,3 +36,19 @@ export const createContact = async (req: Request, res: Response): Promise<void> 
         });
     }
 };
+
+// @desc    Get all contact messages
+// @route   GET /api/contact
+// @access  Private
+export const getContacts = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const contacts = await Contact.find().sort({ createdAt: -1 });
+        res.status(200).json(contacts);
+    } catch (error: any) {
+        console.error('Error fetching contacts:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Server Error'
+        });
+    }
+};

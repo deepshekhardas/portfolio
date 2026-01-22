@@ -29,7 +29,7 @@ const Login = () => {
             } else {
                 setError(data.message || 'Login failed');
             }
-        } catch (err) {
+        } catch {
             setError('Server error');
         }
     };
