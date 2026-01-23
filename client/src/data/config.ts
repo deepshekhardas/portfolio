@@ -81,16 +81,6 @@ export const PROJECTS = [
             demo: "https://restaurant-saas-website.netlify.app/",
         },
     },
-    {
-        title: "Instagram Clone",
-        description: "Full-stack clone of Instagram replicating core social media features.",
-        techStack: ["React", "Full Stack", "Social Media"],
-        features: ["Photo Sharing", "User PROFILES", "Like & Comment", "Feed Logic"],
-        links: {
-            code: "https://github.com/deepshekhardas/instagram-clone",
-            demo: "#",
-        },
-    },
 ];
 
 export const SOCIAL_LINKS = {
