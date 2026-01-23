@@ -68,7 +68,7 @@ export const PROJECTS = [
         features: ["Real-time Messaging", "Group Chats", "File Sharing", "User Search"],
         links: {
             code: "https://github.com/deepshekhardas/luxchat",
-            demo: "#",
+            demo: "https://luxchat-kappa.vercel.app",
         },
     },
     {
