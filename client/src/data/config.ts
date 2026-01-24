@@ -83,6 +83,37 @@ export const PROJECTS = [
     },
 ];
 
+export const OSS_CONTRIBUTIONS = [
+    {
+        name: "Supabase",
+        description: "Open source Firebase alternative - Backend as a Service",
+        stars: "75k+",
+        link: "https://github.com/supabase/supabase",
+        techStack: ["TypeScript", "PostgreSQL", "React"],
+    },
+    {
+        name: "Cal.com",
+        description: "Open source scheduling platform - Calendly alternative",
+        stars: "35k+",
+        link: "https://github.com/calcom/cal.com",
+        techStack: ["Next.js", "TypeScript", "Prisma"],
+    },
+    {
+        name: "Trigger.dev",
+        description: "Background jobs & workflows for modern apps",
+        stars: "10k+",
+        link: "https://github.com/triggerdotdev/trigger.dev",
+        techStack: ["TypeScript", "Node.js", "React"],
+    },
+    {
+        name: "Expensify App",
+        description: "Enterprise expense management application",
+        stars: "Enterprise",
+        link: "https://github.com/Expensify/App",
+        techStack: ["React Native", "TypeScript"],
+    },
+];
+
 export const SOCIAL_LINKS = {
     github: "https://github.com/",
     linkedin: "https://linkedin.com/",
