@@ -78,7 +78,7 @@ export const PROJECTS = [
         features: ["Responsive Design", "Menu Showcase", "Contact Form", "Animations"],
         links: {
             code: "https://github.com/deepshekhardas/restaurant-saas-website",
-            demo: "https://restaurant-saas-website.netlify.app/",
+            demo: "", // TODO: Add valid live link
         },
     },
 ];

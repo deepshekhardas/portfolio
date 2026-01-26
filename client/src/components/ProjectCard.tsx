@@ -79,15 +79,17 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
                         >
                             <Github size={20} />
                         </a>
-                        <a
-                            href={project.links.demo}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-2.5 text-slate-400 hover:text-amber-400 hover:bg-slate-800 rounded-lg transition-colors border border-transparent hover:border-slate-700"
-                            title="View Live Demo"
-                        >
-                            <ExternalLink size={20} />
-                        </a>
+                        {project.links.demo && (
+                            <a
+                                href={project.links.demo}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2.5 text-slate-400 hover:text-amber-400 hover:bg-slate-800 rounded-lg transition-colors border border-transparent hover:border-slate-700"
+                                title="View Live Demo"
+                            >
+                                <ExternalLink size={20} />
+                            </a>
+                        )}
                     </div>
                 </div>
 
