@@ -7,12 +7,16 @@ import connectDB from './config/db';
 import contactRoutes from './routes/contactRoutes';
 import chatRoutes from './routes/chatRoutes';
 import authRoutes from './routes/authRoutes';
+import { startKeepAliveService } from './services/keepAliveService';
 
 // Load env vars
 dotenv.config();
 
 // Connect to database
 connectDB();
+
+// Start Keep-Alive Service (Warm up projects)
+startKeepAliveService();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
