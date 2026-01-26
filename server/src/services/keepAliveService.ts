@@ -2,6 +2,7 @@ import cron from 'node-cron';
 import https from 'https';
 
 const PROJECT_URLS = [
+    'https://portfolio-backend-cqtm.onrender.com/', // Main Backend (Self-Ping)
     'https://fp-hna2.onrender.com/', // Fitness Pro
     'https://simple-ecommerce-backend-three.vercel.app/products', // E-Commerce
     'https://luxchat-kappa.vercel.app', // LuxChat
