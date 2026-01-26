@@ -27,6 +27,21 @@ const Home = () => {
 
         requestAnimationFrame(raf);
 
+        // Handle anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetAnchor = e.currentTarget as HTMLAnchorElement;
+                const href = targetAnchor.getAttribute('href');
+                if (href && href !== '#') {
+                    const target = document.querySelector(href) as HTMLElement;
+                    if (target) {
+                        lenis.scrollTo(target);
+                    }
+                }
+            });
+        });
+
         return () => {
             lenis.destroy();
         };

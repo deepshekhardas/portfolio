@@ -86,7 +86,7 @@ const ChatBot: React.FC = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(true)}
-                className={`fixed bottom-8 right-8 z-50 p-4 rounded-full shadow-lg transition-all duration-300 ${isOpen ? 'scale-0 opacity-0 pointer-events-none' : 'scale-100 opacity-100'
+                className={`fixed bottom-4 right-4 md:bottom-8 md:right-8 z-40 p-3 md:p-4 rounded-full shadow-lg transition-all duration-300 ${isOpen ? 'scale-0 opacity-0 pointer-events-none' : 'scale-100 opacity-100'
                     } bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-indigo-500/30`}
             >
                 <div className="relative">
