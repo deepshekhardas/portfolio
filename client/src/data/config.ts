@@ -4,7 +4,7 @@ export const PERSONAL_DETAILS = {
     role: "Full Stack Developer",
     focus: "Backend-Focused",
     phone: "93355215045",
-    email: "deepshekhar@example.com",
+    email: "deepshekhardas1234@gmail.com",
     location: "Lucknow, India",
     tagline: "Building robust, scalable backend systems and responsive frontends.",
 };
@@ -78,7 +78,7 @@ export const PROJECTS = [
         features: ["Responsive Design", "Menu Showcase", "Contact Form", "Animations"],
         links: {
             code: "https://github.com/deepshekhardas/restaurant-saas-website",
-            demo: "", // TODO: Add valid live link
+            demo: "https://resturant-npit1m9xi-deepshekhardas1234-9292s-projects.vercel.app/",
         },
     },
 ];

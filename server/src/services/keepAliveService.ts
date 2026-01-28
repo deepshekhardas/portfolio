@@ -6,7 +6,7 @@ const PROJECT_URLS = [
     'https://fp-hna2.onrender.com/', // Fitness Pro
     'https://simple-ecommerce-backend-three.vercel.app/products', // E-Commerce
     'https://luxchat-kappa.vercel.app', // LuxChat
-    'https://restaurant-saas-website.netlify.app/' // Restaurant SaaS
+    'https://resturant-npit1m9xi-deepshekhardas1234-9292s-projects.vercel.app/' // Restaurant SaaS
 ];
 
 export const startKeepAliveService = () => {
