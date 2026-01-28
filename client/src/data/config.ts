@@ -115,6 +115,7 @@ export const OSS_CONTRIBUTIONS = [
 ];
 
 export const SOCIAL_LINKS = {
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/",
+    github: "https://github.com/deepshekhardas",
+    linkedin: "https://linkedin.com/in/deepshekhardas",
+    resume: "/resume.pdf", // Place your resume.pdf in client/public folder
 };

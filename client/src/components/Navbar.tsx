@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Code2, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Code2, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PERSONAL_DETAILS, SOCIAL_LINKS } from '../data/config';
 
@@ -69,6 +69,16 @@ const Navbar: React.FC = () => {
                             >
                                 <Linkedin size={20} />
                             </motion.a>
+                            <motion.a
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                href={SOCIAL_LINKS.resume}
+                                download
+                                className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold rounded-lg transition-all duration-300 shadow-lg shadow-amber-500/20 text-sm"
+                            >
+                                <Download size={16} />
+                                Resume
+                            </motion.a>
                         </div>
                     </div>
 
@@ -114,6 +124,15 @@ const Navbar: React.FC = () => {
                                     <Mail size={24} />
                                 </a>
                             </div>
+                            <a
+                                href={SOCIAL_LINKS.resume}
+                                download
+                                onClick={handleLinkClick}
+                                className="mx-3 mt-2 flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold rounded-lg text-base"
+                            >
+                                <Download size={18} />
+                                Download Resume
+                            </a>
                         </div>
                     </motion.div>
                 )}

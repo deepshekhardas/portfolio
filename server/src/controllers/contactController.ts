@@ -1,6 +1,7 @@
 
 import { Request, Response } from 'express';
 import Contact, { IContact } from '../models/Contact';
+import { sendContactNotification } from '../services/emailService';
 
 // @desc    Create a new contact message
 // @route   POST /api/contact
@@ -22,6 +23,11 @@ export const createContact = async (req: Request, res: Response): Promise<void> 
         });
 
         console.log(`Message received from: ${email}`);
+
+        // Send email notification (non-blocking)
+        sendContactNotification(name, email, message).catch(err => {
+            console.error('Email notification failed:', err);
+        });
 
         res.status(201).json({
             success: true,
