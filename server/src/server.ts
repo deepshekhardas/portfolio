@@ -1,4 +1,3 @@
-
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
@@ -7,6 +6,7 @@ import connectDB from './config/db';
 import contactRoutes from './routes/contactRoutes';
 import chatRoutes from './routes/chatRoutes';
 import authRoutes from './routes/authRoutes';
+import testimonialRoutes from './routes/testimonialRoutes';
 import { startKeepAliveService } from './services/keepAliveService';
 
 // Load env vars
@@ -37,6 +37,7 @@ app.use((req: express.Request, res: express.Response, next: express.NextFunction
 });
 
 // Routes
+app.use('/api/testimonials', testimonialRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/auth', authRoutes);
